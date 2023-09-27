@@ -1,6 +1,6 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -99,9 +99,9 @@ p {
     justify-content: space-between
 }
 
-.teacherItem img {
-    height: 100%;
+.curioImg {
     width: 100%;
+    margin-top: 2vh;
 }
 
 .experience {
@@ -113,7 +113,7 @@ p {
 }
 
 .experience .img2 {
-    background-image: url("IMG\Opleidingsoverzicht3.png");
+    background-image: url("../IMG/Opleidingsoverzicht3.png");
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat
@@ -126,6 +126,16 @@ footer {
     padding: 3vh;
 }
 
+.teacherName{
+    text-align: center;
+}
+
+.gridOfTeachers {
+    text-align: center;
+    padding: 2vh;
+    color: #014c35;
+}
+
 @media screen and (max-aspect-ratio: 1.2/1) {
     .teacherContainer{
         grid-template-columns: 1fr 1fr 1fr;
@@ -136,7 +146,7 @@ footer {
     }
 }
 
-@media screen and (max-aspect-ratio: 1.4/1) {
+@media screen and (max-aspect-ratio: 1.6/1) {
     .teacherGridContainer{
         grid-template-columns: 1fr 1fr;
     }
