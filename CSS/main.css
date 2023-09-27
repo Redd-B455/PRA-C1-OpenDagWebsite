@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    padding: 2vh 10vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: #014c35;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header img{
+    height: 5vh;
+}
+
+header nav{
+    margin: auto 0vh;
+    text-align: center;
+}
+
+header nav a{
+    color: #ffcc00;
+    font-size: x-large;
+    font-style: bold;
+    margin-left: 3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav a:hover{
+    text-decoration: underline;
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    font-size: large;
+}
+
+.collegeBackground {
+    background-image: url("../IMG/Sanne\ Bas\ -\ Curio\ -\ Knipplein\ 11-1.jpg");      
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.collegeBackground h1 {
+    padding: 45vh 0px;
+    text-align: center;
+}
+
+.schedule {
+    background-color: #ffcc00;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 2vh;
+    padding: 1vh 2vh;
+    color: #014c35;
+}
+
+.schedule .img {
+    background-image: url("../IMG/Rooster\ eerste\ leerjaar.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.possibilityToAccelerate {
+    background-color: #014c35;
+    color: #ffcc00;
+    padding: 2vh;
+}
+
+.teachers {
+    background-color: #ffcc00;
+}
+
+.teacherContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2vh;
+    padding: 2vh;
+}
+
+.teacherItem {
+    padding: 2vh;
+    background-color: #014c35;
+    color: #ffcc00;
+    border-radius: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
+}
+
+.teacherItem img {
+    height: 100%;
+    width: 100%;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #014c35;
+    color: #ffcc00;
+    padding: 2vh;
+}
+
+.experience .img2 {
+    background-image: url("IMG\Opleidingsoverzicht3.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+footer {
+    text-align: center;
+    background-color: #ffcc00;
+    color: #014c35;
+    padding: 3vh;
+}
+
+@media screen and (max-aspect-ratio: 1.2/1) {
+    .teacherContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .teacherItem{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-aspect-ratio: 1.4/1) {
+    .teacherGridContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .subjectGridContainer{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-aspect-ratio: 1.6/1) {
+    .teacherGridContainer{
+        grid-template-columns: 1fr;
+    }
+
+    .subjectGridContainer{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* @media screen and (max-aspect-ratio: 1.4/1) {
+    .teacherGridContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .subjectGridContainer{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} */
